@@ -1,9 +1,9 @@
 # Thông tin học viên
 
-- Họ và tên: <<>>
-- MSHV: <<>>
-- Lớp (L2 / L3 / khác): <<>>
-- Tài khoản GitHub: <<>>
+- Họ và tên: Đinh Thành Vinh
+- MSHV: 2A202603044
+- Lớp (L2 / L3 / khác): L2A
+- Tài khoản GitHub: vdprogramm
 - Repo bài nộp (URL): <<>>
 - Commit chốt bài (hash): <<>>
 - Máy: <<hệ điều hành, GPU (CUDA / MPS / không có)>>
