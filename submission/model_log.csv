@@ -1,1 +1,5 @@
-run_id,part,model,params,split,n_boxes,sec_per_img,what_went_right,what_went_wrong,decision
+run_id,part,model,params,split,n_boxes,sec_per_img,what_went_right,what_went_wrong,decision,out,device,n_images,n_masks,dropped,note
+r01,,yolo26-m,--model yolo26 --size m --split pilot --conf 0.25 --out work/prelabel/t_y26,pilot,215,0.56,,,,work\prelabel\t_y26,cpu,8,0,umbrellax10;handbagx2;traffic lightx2;backpackx2,
+r02,,yolo26-m,--model yolo26 --size m --split pilot --conf 0.5 --out work/prelabel/t_y26_c05,pilot,139,0.5,,,,work\prelabel\t_y26_c05,cpu,8,0,umbrellax5;handbagx2;traffic lightx1;backpackx1,
+r03,,yoloe-s,--model yoloe --classes three_wheeler --split pilot --conf 0.25 --out work/prelabel/t_yoloe,pilot,8,0.23,,,,work\prelabel\t_yoloe,cpu,8,0,,
+r04,,yolo26-m+sam(sam2.1_b.pt),"--model yolo26 --size m --classes person,motorbike,car --images img_004.jpg img_013.jpg --conf 0.3 --segmenter sam --sam sam2.1_b.pt --out work/prelabel/t_sam",custom,16,3.57,,,,work\prelabel\t_sam,cpu,2,16,umbrellax3;handbagx1;bottlex8;chairx1,
